@@ -1,0 +1,117 @@
+/* theme.css - Palette de couleurs globale */
+
+:root {
+  /* Couleurs principales */
+  --color-primary: #0206b7;          /* Bleu foncé */
+  --color-background: #f3f6fa;        /* Blanc bleuté */
+  
+  /* Couleurs secondaires & d'accent */
+  --color-primary-hover: #3c44e9;     /* Bleu clair (hover) */
+  --color-gray-light: #dce3ed;        /* Gris clair */
+  --color-gray-medium: #4b5563;       /* Gris moyen (texte) */
+  --color-text-dark: #1f2937;         /* Noir profond */
+  --color-accent: #facc15;            /* Jaune doux (CTA) */
+  
+  /* Variables dérivées pour plus de flexibilité */
+  --color-primary-light: rgba(2, 6, 183, 0.1);
+  --color-primary-ultra-light: rgba(2, 6, 183, 0.05);
+  --color-white: #ffffff;
+  --color-white-alpha: rgba(255, 255, 255, 0.9);
+  
+  /* Gradients fréquemment utilisés */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  --gradient-background: linear-gradient(135deg, var(--color-background) 0%, var(--color-gray-light) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), #f59e0b);
+  
+  /* Ombres */
+  --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --shadow-strong: 0 12px 24px rgba(2, 6, 183, 0.15);
+  --shadow-accent: 0 4px 12px rgba(245, 204, 21, 0.3);
+  
+  /* Rayons de bordure */
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-full: 50px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Typographie */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 800;
+  
+  /* Espacements */
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+}
+
+/* Classes utilitaires basées sur la palette */
+.text-primary { color: var(--color-primary); }
+.text-primary-hover { color: var(--color-primary-hover); }
+.text-gray-medium { color: var(--color-gray-medium); }
+.text-dark { color: var(--color-text-dark); }
+.text-accent { color: var(--color-accent); }
+
+.bg-primary { background-color: var(--color-primary); }
+.bg-background { background-color: var(--color-background); }
+.bg-gray-light { background-color: var(--color-gray-light); }
+.bg-white { background-color: var(--color-white); }
+
+.gradient-primary { background: var(--gradient-primary); }
+.gradient-background { background: var(--gradient-background); }
+.gradient-accent { background: var(--gradient-accent); }
+
+/* Styles de base pour une meilleure accessibilité */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -webkit-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--color-gray-medium);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Focus visible amélioré pour l'accessibilité */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-small);
+}
+
+/* Amélioration de la lisibilité des liens */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Styles pour une meilleure performance des animations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
