@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/rufus-akande/" />
+    <meta charset="UTF-8" />
+    <title>Redirection...</title>
+    <script>
+      // Rediriger proprement vers index.html tout en conservant la route
+      var redirectTo = window.location.pathname.replace(
+        /^\/rufus-akande/,
+        ""
+      );
+      window.location.replace("/rufus-akande/index.html?redirect=" + redirectTo);
+    </script>
   </head>
   <body>
-    <p>Redirection vers l’accueil...</p>
+    <p>Redirection en cours...</p>
   </body>
 </html>

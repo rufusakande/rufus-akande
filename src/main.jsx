@@ -9,6 +9,12 @@ import Realisations from './pages/Realisations'
 import Services from './pages/Services'
 import Contact from './pages/Contact';
 
+const urlParams = new URLSearchParams(window.location.search);
+const redirectPath = urlParams.get("redirect");
+
+if (redirectPath) {
+  window.history.replaceState(null, "", "/rufus-akande" + redirectPath);
+}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
