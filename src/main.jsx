@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
+    <Router basename="/rufus-akande">
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/services' element={<Services/>} />
