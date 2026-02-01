@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Eye, Code, Palette, ShoppingCart, Heart, Users, Calendar } from 'lucide-react';
 import './ProjetsCards.css';
+import img1 from '../../assets/Images/Rufus Akande développeur web freelance22.png';
+import img2 from '../../assets/Images/Rufus Akande développeur web freelance14.webp';
+import img3 from '../../assets/Images/Rufus Akande développeur web freelance21.png';
+import img4 from '../../assets/Images/Rufus Akande développeur web freelance12.png';
+import img5 from '../../assets/Images/Rufus Akande développeur web freelance13.png';
+import img6 from '../../assets/Images/Rufus Akande développeur web freelance15.png';
 
 const ProjetsCards = () => {
   const sectionRef = useRef(null);
@@ -10,75 +16,75 @@ const ProjetsCards = () => {
   const projets = [
     {
       id: 1,
-      nom: "Site vitrine pour coach bien-être",
-      description: "Design élégant avec blog intégré, système de prise de rendez-vous et espace client personnalisé.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "Node.js", "MySQL", "CSS"],
-      lienSite: "#",
-      lienDemo: "#",
-      category: "vitrine",
-      icon: Heart,
-      couleurAccent: "#facc15"
+      nom: "Landing page Back To Business",
+      description: "Page ultra-convertissante, qui parle directement aux entrepreneurs et les incite à passer à l'action.",
+      image: img1,
+      technologies: ["React", "Node.js", "Express", "MySQL"],
+      lienSite: "https://rufusakande.github.io/backtobusiness/",
+      lienDemo: "https://rufusakande.github.io/backtobusiness/",
+      category: "webapp",
+      icon: Code,
+      couleurAccent: "#3c44e9"
     },
     {
       id: 2,
-      nom: "Boutique e-commerce artisanale",
-      description: "Plateforme de vente en ligne avec gestion des stocks, paiements sécurisés et tableau de bord vendeur.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "Express", "Stripe", "MongoDB"],
-      lienSite: "#",
-      lienDemo: "#",
-      category: "ecommerce",
-      icon: ShoppingCart,
+      nom: "Landing page pour Safari Baleine",
+      description: "Landing page interactive qui permet de réserver des excursions en mer avec une expérience utilisateur immersive.",
+      image: img5,
+      technologies: ["React", "Node.js", "Express", "MySQL"],
+      lienSite: "https://safaribaleine-ig.com/",
+      lienDemo: "https://safaribaleine-ig.com/",
+      category: "webapp",
+      icon: Palette,
       couleurAccent: "#0206b7"
-    },
+    },  
     {
       id: 3,
-      nom: "Application de réservation",
-      description: "Système complet de réservation en ligne avec calendrier interactif et notifications automatiques.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "Node.js", "Socket.io", "PostgreSQL"],
-      lienSite: "#",
-      lienDemo: "#",
+      nom: "Application de réservation des vols",
+      description: "Système complet de réservation des vols et hôtes avec calendrier interactif et notifications automatiques.",
+      image: img3,
+      technologies: ["React", "Node.js", "Express", "MySQL"],
+      lienSite: "https://cartiertravel.com/",
+      lienDemo: "https://cartiertravel.com/",
       category: "webapp",
       icon: Calendar,
       couleurAccent: "#3c44e9"
     },
     {
       id: 4,
-      nom: "Plateforme communautaire",
-      description: "Réseau social spécialisé avec forums, messagerie temps réel et système de badges gamifié.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "GraphQL", "Redis", "Docker"],
-      lienSite: "#",
-      lienDemo: "#",
+      nom: "Site web pour Eraste Akande",
+      description: "Portfolio professionnel mettant en avant les compétences et réalisations d'un expert en elasticsearch.",
+      image: img6,
+      technologies: ["React", "Node.js", "Express", "MySQL"],
+      lienSite: "https://iyanou.github.io/eraste-akande/",
+      lienDemo: "https://iyanou.github.io/eraste-akande/",
+      category: "webapp",
+      icon: Code,
+      couleurAccent: "#3c44e9"
+    },
+    {
+      id: 5,
+      nom: "Site web pour ActuDuBled",
+      description: "Site d'actualités communautaire avec contenu généré par les utilisateurs, modération et fonctionnalités sociales.",
+      image: img4,
+      technologies: ["React", "Node.js", "Express", "MySQL"],
+      lienSite: "https://test.safaribaleine-ig.com/",
+      lienDemo: "https://test.safaribaleine-ig.com/",
       category: "webapp",
       icon: Users,
       couleurAccent: "#facc15"
     },
     {
-      id: 5,
-      nom: "Portfolio créatif interactif",
-      description: "Site portfolio avec animations 3D, transitions fluides et système de filtrage dynamique.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "Three.js", "GSAP", "Vite"],
-      lienSite: "#",
-      lienDemo: "#",
-      category: "vitrine",
-      icon: Palette,
-      couleurAccent: "#0206b7"
-    },
-    {
       id: 6,
-      nom: "Dashboard analytique",
-      description: "Interface d'administration avec graphiques temps réel, exports PDF et gestion multi-utilisateurs.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "D3.js", "Express", "Chart.js"],
+      nom: "Boutique e-commerce pour ShineCraft",
+      description: "Plateforme de vente en ligne avec gestion des stocks, paiements sécurisés et tableau de bord vendeur.",
+      image: img2,
+      technologies: ["React", "Express", "Node.js", "MySQL"],
       lienSite: "#",
       lienDemo: "#",
-      category: "webapp",
-      icon: Code,
-      couleurAccent: "#3c44e9"
+      category: "ecommerce",
+      icon: ShoppingCart,
+      couleurAccent: "#0206b7"
     }
   ];
 
