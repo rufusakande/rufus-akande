@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -21,9 +22,9 @@ const Footer = () => {
           <div className="footer-grid">
             {/* Brand Column */}
             <div className="footer-column brand-column">
-              <a href="/" className="footer-logo" aria-label="Rufus Akande - Accueil">
+              <Link to="/" className="footer-logo" aria-label="Rufus Akande - Accueil">
                 <span className="footer-logo-text">Rufus<span className="footer-logo-highlight">Akande</span></span>
-              </a>
+              </Link>
               <p className="footer-tagline">
                 Des solutions web sur mesure pour vous démarquer et développer votre présence en ligne.
               </p>
@@ -44,11 +45,11 @@ const Footer = () => {
             <div className="footer-column">
               <h3 className="footer-heading">Navigation</h3>
               <ul className="footer-links">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/a-propos">À propos</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/realisations">Réalisations</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><Link to="/">Accueil</Link></li>
+                <li><Link to="/apropos">À propos</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/realisations">Réalisations</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
 
@@ -56,10 +57,10 @@ const Footer = () => {
             <div className="footer-column">
               <h3 className="footer-heading">Services</h3>
               <ul className="footer-links">
-                <li><a href="/services#vitrine">Sites Vitrines</a></li>
-                <li><a href="/services#ecommerce">E-commerce</a></li>
-                <li><a href="/services#webapp">Applications Web</a></li>
-                <li><a href="/services#conseil">Conseil & Accompagnement</a></li>
+                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'vitrine'; }}>Sites Vitrines</Link></li>
+                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'ecommerce'; }}>E-commerce</Link></li>
+                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'webapp'; }}>Applications Web</Link></li>
+                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'conseil'; }}>Conseil & Accompagnement</Link></li>
               </ul>
             </div>
 
@@ -88,9 +89,9 @@ const Footer = () => {
               &copy; {currentYear} Rufus Akande. Tous droits réservés.
             </div>
             <div className="legal-links">
-              <a href="/mentions-legales">Mentions légales</a>
+              <a href="/">Accueil</a>
               <span className="separator">|</span>
-              <a href="/politique-confidentialite">Politique de confidentialité</a>
+              <a href="/">Politique de confidentialité</a>
             </div>
           </div>
         </div>

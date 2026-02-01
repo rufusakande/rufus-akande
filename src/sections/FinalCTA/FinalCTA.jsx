@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import {
   ArrowRight,
   CheckCircle
@@ -61,24 +62,24 @@ const FinalCTA = () => {
           </div>
 
           <div className={`final-cta-actions ${isVisible ? 'animate-bounce-in' : ''}`}>
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="cta-primary-button"
               role="button"
               aria-label="Commencer votre projet maintenant"
             >
               Commencer mon projet
               <ArrowRight className="button-icon" aria-hidden="true" />
-            </a>
+            </Link>
             
-            <a 
-              href="/realisations" 
+            <Link 
+              to="/realisations" 
               className="cta-secondary-button"
               role="button"
               aria-label="Découvrir mes réalisations"
             >
               Voir mes réalisations
-            </a>
+            </Link>
           </div>
 
           <p className="final-cta-guarantee">
