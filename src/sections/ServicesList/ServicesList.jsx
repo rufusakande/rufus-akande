@@ -12,6 +12,7 @@ import {
   Code
 } from 'lucide-react';
 import './ServicesList.css';
+import { Link } from 'react-router-dom';
 
 const ServicesList = () => {
   const sectionRef = useRef(null);
@@ -177,17 +178,14 @@ const ServicesList = () => {
               </div>
 
               <div className="card-footer">
-                <button 
+                <Link 
+                  to="/contact" 
                   className="cta-button"
-                  onClick={() => {
-                    // Scroll vers le formulaire de contact ou ouvrir modal
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
                   aria-label={`Demander un devis pour ${service.title}`}
                 >
                   <span>Demander un devis</span>
                   <ArrowRight className="arrow-icon" aria-hidden="true" />
-                </button>
+                </Link>
               </div>
 
               <div className="card-decoration">

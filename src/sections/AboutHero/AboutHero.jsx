@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { User, Code, Heart, Award, MapPin, Mail, Github, Linkedin } from 'lucide-react';
 import './AboutHero.css';
 import rufusImg from '../../assets/Images/rufus.webp'
+import { Link } from 'react-router-dom';
 
 const AboutHero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +34,7 @@ const AboutHero = () => {
           <div className="content">
             <div className="badge">
               <User size={16} aria-hidden="true" />
-              <span>Développeur Web Fullstack</span>
+              <span>Développeur Web Freelance</span>
             </div>
 
             <h1 id="hero-title" className="title">
@@ -41,18 +42,18 @@ const AboutHero = () => {
             </h1>
 
             <p className="subtitle">
-              Je suis <strong className="highlight">Rufus Akande</strong>, développeur web fullstack basé au Bénin. 
-              Ma passion : créer des interfaces claires, des fonctionnalités utiles et des sites performants 
+              Je suis <strong className="highlight">Rufus Akande</strong>, développeur web freelance basé au Bénin. 
+              Ma passion est de créer des interfaces claires, des fonctionnalités utiles et des sites performants 
               qui <em>convertissent vos visiteurs en clients</em>.
             </p>
 
             <div className="stats" role="group" aria-label="Statistiques professionnelles">
               <div className="stat">
-                <span className="stat-number" aria-label="Plus de 5 ans">5+</span>
+                <span className="stat-number" aria-label="Plus de 5 ans">4+</span>
                 <span className="stat-label">Années d'expérience</span>
               </div>
               <div className="stat">
-                <span className="stat-number" aria-label="Plus de 30 projets">30+</span>
+                <span className="stat-number" aria-label="Plus de 30 projets">15+</span>
                 <span className="stat-label">Projets réalisés</span>
               </div>
               <div className="stat">
@@ -62,14 +63,14 @@ const AboutHero = () => {
             </div>
 
             <div className="cta-buttons">
-              <a href="#realisations" className="btn-primary" aria-label="Découvrir mes réalisations">
+              <Link to="/realisations" className="btn-primary" aria-label="Découvrir mes réalisations">
                 <Award size={20} aria-hidden="true" />
                 Voir mes réalisations
-              </a>
-              <a href="#contact" className="btn-secondary" aria-label="Me contacter">
+              </Link>
+              <Link to="/contact" className="btn-secondary" aria-label="Me contacter">
                 <Mail size={20} aria-hidden="true" />
                 Me contacter
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -81,7 +82,7 @@ const AboutHero = () => {
               </div>
               
               <h2 className="profile-name">Rufus Akande</h2>
-              <p className="profile-role">Développeur Web Fullstack</p>
+              <p className="profile-role">Développeur Web Freelance</p>
               
               <div className="skills-showcase">
                 <p className="skills-title">Spécialisé en</p>
@@ -91,18 +92,18 @@ const AboutHero = () => {
               </div>
 
               <div className="social-links" role="group" aria-label="Liens réseaux sociaux">
-                <a href="mailto:rufus.dev@mail.com" className="social-link" aria-label="Envoyer un email">
+                <Link to="mailto:akanderufus51@gmail.com" className="social-link" aria-label="Envoyer un email">
                   <Mail size={20} />
-                </a>
-                <a href="#" className="social-link" aria-label="Profil GitHub">
+                </Link>
+                <Link to="https://github.com/rufusakande" className="social-link" aria-label="Profil GitHub">
                   <Github size={20} />
-                </a>
-                <a href="#" className="social-link" aria-label="Profil LinkedIn">
+                </Link >
+                <Link to="https://www.linkedin.com/in/rufus-akande-freelance-developpeur-web/" className="social-link" aria-label="Profil LinkedIn">
                   <Linkedin size={20} />
-                </a>
-                <a href="#" className="social-link" aria-label="Localisation Parakou, Bénin">
+                </Link>
+                <Link to="#" className="social-link" aria-label="Localisation Parakou, Bénin">
                   <MapPin size={20} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

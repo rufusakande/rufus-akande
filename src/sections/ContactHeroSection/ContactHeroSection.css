@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 6rem 2rem 0;
   
   /* Optimisation des performances */
   will-change: transform;

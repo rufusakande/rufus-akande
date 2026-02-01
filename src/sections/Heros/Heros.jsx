@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { ArrowRight, Play, Code, Palette, Zap } from 'lucide-react';
 import './Heros.css';
 import rufusImg from '../../assets/Images/rufus.webp'
+import { Link } from 'react-router-dom';
+
 const Heros = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -59,7 +61,7 @@ const Heros = () => {
           <div className="hero-text">
             <div className="hero-greeting">
               <span className="wave">👋</span>
-              <span>Salut, moi c'est</span>
+              <span>Salut, je suis</span>
             </div>
             
             <h1 className="hero-title">
@@ -73,8 +75,8 @@ const Heros = () => {
             </h1>
 
             <p className="hero-description">
-              <strong>Développeur web fullstack freelance</strong>, je transforme vos idées en solutions modernes, efficaces et rentables. 
-              Spécialisé dans la création de sites vitrines, e-commerce et applications web sur mesure.
+              <strong>Développeur web fullstack freelance</strong>, J'aide les entrepreneurs et indépendants à développer leurs activités et générer des revenus en ligne graçe à des sites web performants et orientés conversion. 
+              
             </p>
 
             <div className="hero-features">
@@ -93,32 +95,34 @@ const Heros = () => {
             </div>
 
             <div className="hero-cta">
-              <button 
+              <Link
+              to="/realisations" 
                 className="cta-primary" 
                 onClick={scrollToProjects}
                 aria-label="Voir mes réalisations"
               >
                 Voir mes réalisations
                 <ArrowRight size={20} />
-              </button>
+              </Link>
               
-              <button 
+              <Link 
+              to="https://wa.me/22951080983"
                 className="cta-secondary" 
                 onClick={scrollToContact}
                 aria-label="Me contacter"
               >
                 <Play size={18} />
                 Me contacter
-              </button>
+              </Link>
             </div>
 
             <div className="hero-stats">
               <div className="stat">
-                <span className="stat-number">5+</span>
+                <span className="stat-number">4+</span>
                 <span className="stat-label">Années d'expérience</span>
               </div>
               <div className="stat">
-                <span className="stat-number">30+</span>
+                <span className="stat-number">15+</span>
                 <span className="stat-label">Projets réalisés</span>
               </div>
               <div className="stat">

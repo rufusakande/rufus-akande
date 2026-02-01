@@ -63,9 +63,10 @@ const FinalCTA = () => {
 
           <div className={`final-cta-actions ${isVisible ? 'animate-bounce-in' : ''}`}>
             <Link 
-              to="/contact" 
+              to="https://wa.me/22951080983" 
               className="cta-primary-button"
               role="button"
+              target='blank'
               aria-label="Commencer votre projet maintenant"
             >
               Commencer mon projet

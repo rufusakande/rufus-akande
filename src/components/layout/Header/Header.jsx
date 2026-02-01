@@ -65,10 +65,10 @@ const Header = () => {
                 Services <ChevronDown size={16} />
               </button>
               <ul className={`dropdown-menu ${activeDropdown === 0 ? 'show' : ''}`}>
-                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'vitrine'; }}>Sites Vitrines</Link></li>
-                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'ecommerce'; }}>E-commerce</Link></li>
-                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'webapp'; }}>Applications Web</Link></li>
-                <li><Link to="/services" onClick={(e) => { e.preventDefault(); window.location.hash = 'conseil'; }}>Conseil & Accompagnement</Link></li>
+                <li><Link to="/services" >Sites Vitrines</Link></li>
+                <li><Link to="/services" >E-commerce</Link></li>
+                <li><Link to="/services" >Applications Web</Link></li>
+                <li><Link to="/services" >Conseil & Accompagnement</Link></li>
               </ul>
             </li>
             <li className="nav-item">
@@ -84,7 +84,7 @@ const Header = () => {
         </nav>
 
         <div className="cta-container">
-          <Link to="/contact" className="cta-button" aria-label="Me contacter">
+          <Link to="https://wa.me/22951080983" target="_blank" className="cta-button" aria-label="Me contacter">
             Me contacter
           </Link>
           <button 

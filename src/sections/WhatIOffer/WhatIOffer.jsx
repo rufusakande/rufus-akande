@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Monitor, ShoppingCart, Settings, Users } from 'lucide-react';
 import './WhatIOffer.css';
+import { Link } from 'react-router-dom';
 
 const WhatIOffer = () => {
   const sectionRef = useRef(null);
@@ -97,12 +98,13 @@ const WhatIOffer = () => {
         </div>
         
         <div className="what-i-offer__cta">
-          <button 
+          <Link 
+            to="/services" 
             className="what-i-offer__btn"
             aria-label="Voir tous mes services en détail"
           >
             Découvrir tous mes services
-          </button>
+          </Link>
         </div>
       </div>
     </section>

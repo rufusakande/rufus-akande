@@ -33,7 +33,7 @@ const WhyChooseMe = () => {
   }, []);
 
   const startCounters = () => {
-    const targets = { experience: 5, projects: 30, satisfaction: 100 };
+    const targets = { experience: 4, projects: 15, satisfaction: 100 };
     const duration = 2000;
     const steps = 60;
     const stepDuration = duration / steps;
@@ -141,7 +141,7 @@ const WhyChooseMe = () => {
             </p>
             <cite className="why-choose-me__quote-author">
               <strong>Rufus Akande</strong>
-              <span>Développeur Web Full-Stack</span>
+              <span>Développeur Web Freelance</span>
             </cite>
           </blockquote>
         </div>

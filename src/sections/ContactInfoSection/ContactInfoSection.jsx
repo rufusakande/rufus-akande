@@ -36,7 +36,7 @@ const ContactInfoSection = () => {
 
   const handleEmailCopy = async () => {
     try {
-      await navigator.clipboard.writeText('rufus.dev@mail.com');
+      await navigator.clipboard.writeText('akanderufus51@gmail.com');
       setCopiedEmail(true);
       setTimeout(() => setCopiedEmail(false), 2000);
     } catch (err) {
@@ -49,8 +49,8 @@ const ContactInfoSection = () => {
     {
       type: 'email',
       label: 'Email professionnel',
-      value: 'rufus.dev@mail.com',
-      href: 'mailto:rufus.dev@mail.com',
+      value: 'akanderufus51@gmail.com',
+      href: 'mailto:akanderufus51@gmail.com',
       icon: Mail,
       description: 'Réponse garantie sous 24h',
       color: 'email',
@@ -72,7 +72,7 @@ const ContactInfoSection = () => {
     {
       name: 'LinkedIn',
       description: 'Réseau professionnel',
-      href: 'https://linkedin.com/in/rufus-akande',
+      href: 'https://www.linkedin.com/in/rufus-akande-freelance-developpeur-web/',
       icon: Linkedin,
       color: 'linkedin',
       badge: 'Profil vérifié'
@@ -80,15 +80,15 @@ const ContactInfoSection = () => {
     {
       name: 'Comeup',
       description: 'Marketplace française',
-      href: 'https://comeup.com/@rufus-akande',
+      href: 'https://comeup.com/fr/@akande-rufus',
       icon: Globe,
       color: 'comeup',
-      badge: 'Top vendeur'
+      badge: 'Nouveau vendeur'
     },
     {
       name: 'Upwork',
       description: 'Plateforme internationale',
-      href: 'https://upwork.com/freelancers/rufus-akande',
+      href: 'https://www.upwork.com/freelancers/~01f235722f1321a00d?mp_source=share',
       icon: Star,
       color: 'upwork',
       badge: '100% satisfaction'

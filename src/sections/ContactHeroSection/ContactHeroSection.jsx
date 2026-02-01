@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, ArrowRight, Sparkles } from 'lucide-react';
 import './ContactHeroSection.css';
+import { Link } from 'react-router-dom';
 
 const ContactHeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -84,18 +85,15 @@ const ContactHeroSection = () => {
           {/* Sous-titre */}
           <p className="subtitle">
             Échangeons sur votre vision, vos objectifs et créons ensemble 
-            une solution web qui vous ressemble et qui performe.
+            une solution web qui fait croître votre entreprise.
           </p>
 
           {/* CTA principal */}
           <div className="cta-wrapper">
-            <button 
-              className="primary-cta"
-              aria-label="Commencer la conversation maintenant"
-            >
+            <Link to="https://wa.me/22951080983" target='blank' className="primary-cta" role="button" aria-label="Contactez-moi">
               <span>Commençons à discuter</span>
-              <ArrowRight className="cta-icon" size={20} aria-hidden="true" />
-            </button>
+                <ArrowRight className="cta-icon" size={20} aria-hidden="true" />
+            </Link>
           </div>
 
           {/* Indicateurs de confiance */}
@@ -109,7 +107,7 @@ const ContactHeroSection = () => {
               <div className="indicator-label">Gratuit & sans engagement</div>
             </div>
             <div className="indicator">
-              <div className="indicator-value">+30</div>
+              <div className="indicator-value">+15</div>
               <div className="indicator-label">Projets réalisés</div>
             </div>
           </div>

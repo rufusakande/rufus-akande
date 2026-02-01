@@ -12,6 +12,7 @@ import {
   CheckCircle
 } from 'lucide-react';
 import './MonParcours.css';
+import { Link } from 'react-router-dom';
 
 const MonParcours = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
@@ -21,13 +22,13 @@ const MonParcours = () => {
   const experiences = [
     {
       id: 1,
-      year: '2019-2024',
+      year: '2024-2026',
       title: 'Développeur Web Fullstack Freelance',
       company: 'Indépendant',
       location: 'Parakou, Bénin',
       description: 'Création de sites vitrines, e-commerce et applications web sur mesure pour entrepreneurs, ONG et professionnels.',
       achievements: [
-        '30+ projets web réalisés avec succès',
+        '15+ projets web réalisés avec succès',
         'Spécialisation React, Node.js, MySQL',
         'Accompagnement technique personnalisé',
         'Taux de satisfaction client : 100%'
@@ -36,11 +37,11 @@ const MonParcours = () => {
     },
     {
       id: 2,
-      year: '2018-2019',
+      year: '2022-2024',
       title: 'Développeur Frontend Junior',
-      company: 'TechStart Africa',
-      location: 'Cotonou, Bénin',
-      description: 'Développement d\'interfaces utilisateur modernes et responsive pour des startups africaines.',
+      company: 'Indépendant',
+      location: 'Parakou, Bénin',
+      description: 'Développement d\'interfaces utilisateur modernes et responsive.',
       achievements: [
         'Maîtrise des frameworks JavaScript modernes',
         'Optimisation des performances web',
@@ -51,9 +52,9 @@ const MonParcours = () => {
     },
     {
       id: 3,
-      year: '2017-2018',
+      year: '2021-2022',
       title: 'Développeur Web Junior',
-      company: 'WebSolutions Pro',
+      company: 'Rasipe ONG',
       location: 'Parakou, Bénin',
       description: 'Premiers pas dans le développement web professionnel, focus sur les technologies frontend.',
       achievements: [
@@ -69,12 +70,14 @@ const MonParcours = () => {
   const formations = [
     {
       id: 1,
-      year: '2016-2017',
-      title: 'Formation Développement Web Fullstack',
-      institution: 'École Supérieure de Technologie',
-      location: 'Cotonou, Bénin',
-      description: 'Formation intensive en développement web moderne, de l\'intégration HTML/CSS au développement backend.',
+      year: '2025-2026',
+      title: 'Formation en Création d\'Agent IA',
+      institution: 'Autodidacte & Cours en ligne',
+      location: 'Parakou, Bénin',
+      description: 'Formation intensive en création d\'agents IA et développement web moderne.',
       skills: [
+        'Intelligence Artificielle & Machine Learning',
+        'Création d\'agents IA',
         'Développement Frontend & Backend',
         'Bases de données relationnelles',
         'Méthodologies de développement',
@@ -83,7 +86,7 @@ const MonParcours = () => {
     },
     {
       id: 2,
-      year: '2015-2016',
+      year: '2021-2025',
       title: 'Autoformation Continue',
       institution: 'Plateformes en ligne',
       location: 'À distance',
@@ -329,13 +332,13 @@ const MonParcours = () => {
               Forte de cette expérience, je suis prêt à mettre mes compétences au service de votre réussite digitale.
             </p>
             <div className="cta-buttons">
-              <a href="#contact" className="btn-primary">
+              <Link to="https://wa.me/22951080983" target="_blank" className="btn-primary">
                 Démarrons ensemble
                 <ArrowRight size={20} aria-hidden="true" />
-              </a>
-              <a href="#realisations" className="btn-secondary">
+              </Link>
+              <Link to="/realisations" className="btn-secondary">
                 Voir mes réalisations
-              </a>
+              </Link>
             </div>
           </div>
         </div>

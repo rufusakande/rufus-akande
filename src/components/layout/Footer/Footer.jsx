@@ -29,13 +29,13 @@ const Footer = () => {
                 Des solutions web sur mesure pour vous démarquer et développer votre présence en ligne.
               </p>
               <div className="social-links">
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link">
+                <a href="https://www.linkedin.com/in/rufus-akande-freelance-developpeur-web/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="social-link">
+                <a href="https://github.com/rufusakande" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="social-link">
                   <Github size={20} />
                 </a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-link">
+                <a href="https://www.instagram.com/rufusakande_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-link">
                   <Instagram size={20} />
                 </a>
               </div>
@@ -70,11 +70,11 @@ const Footer = () => {
               <ul className="contact-info">
                 <li>
                   <Mail size={16} className="contact-icon" />
-                  <a href="mailto:rufus.dev@mail.com">rufus.dev@mail.com</a>
+                  <a href="mailto:rufus.dev@mail.com">akanderufus51@gmail.com</a>
                 </li>
                 <li>
                   <Phone size={16} className="contact-icon" />
-                  <a href="tel:+22900000000">+229 00 00 00 00</a>
+                  <a href="https://wa.me/22951080983">+229 01 51 08 09 83</a>
                 </li>
                 <li>
                   <MapPin size={16} className="contact-icon" />
